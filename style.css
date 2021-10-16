@@ -27,7 +27,7 @@ body {
 .slide img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 2%;
 }
 
 input {
@@ -39,12 +39,12 @@ input {
     position: relative;
     width: 60%;
     top: 10%;
-    font-size: 24px;
+    font-size: 150%;
     opacity: 0;
 }
 
 .navigation {
-    margin: 3vw 0;
+    margin: 5% 0 10%;
     display: flex;
     justify-content: end;
 }
@@ -55,34 +55,27 @@ input {
     justify-content: center;
 }
 
+label {
+    padding: 10px;
+    cursor: pointer;
+}
+
 .bar {
-    width: 20px;
-    height: 20px;
-    margin: 10px;
+    width: 1vw;
+    height: 1vw;
     border-radius: 50%;
     background: blue;
     cursor: pointer;
-    transition: all 0.8s ease-in;
+    transition: all 0.4s ease-in;
 }
 
 .bar:hover {
     background: white;
 }
 
-.slider .navigation .bars .bar:after {
-	border: 2px solid green;
-	content: " ";
-	display: block;
-	height: 12px;
-	left: -4px;
-	position: absolute;
-	top: -4px;
-	width: 12px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-}
+.bar:active {
+    background: yellow;
+} 
 
 #radio-1:checked ~ .slide-1 {
     margin-left: 0;
@@ -116,4 +109,34 @@ input {
 
 #radio-4:checked ~ .slide-4 > p {
     opacity: 1;
+}
+
+@media screen and (max-width: 420px){ 
+
+    .slider {
+        margin: 5% auto;
+        width: 90%;
+    }
+
+    .description {
+        font-size: 100%;
+        top: 25%;
+    }
+    
+    .navigation {
+        justify-content: center;
+    }
+
+    label {
+        padding: 4px;
+    }
+
+    .bar {
+        width: 3vw;
+        height: 3vw;
+    }
+
+
+
+
 }
