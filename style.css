@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { background-color: #80808042 }
+
+.slider {
+    margin: 5% auto;
+    width: 70%;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    transition: all 0.3s ease-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+}
+
+input { display: none }
+
+.description {
+    position: relative;
+    width: 60%;
+    top: 10%;
+    font-size: 150%;
+    opacity: 0;
+}
+
+.navigation {
+    margin: 5% 0 10%;
+    display: flex;
+    justify-content: end;
+}
+
+.bars {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background: #009688;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+.bar:hover { background: #000000d1 }
+
+.bar:active {
+    width: 0.7vw;
+    height: 0.7vw;
+    background: gray;
+    border: 0.2vw solid white;
+} 
+
+#radio-1:checked ~ .slide-1 { margin-left: 0 }
+
+#radio-1:checked ~ .slide-1 > p { opacity: 1 }
+
+#radio-2:checked ~ .slide-2 { margin-left: -25% }
+
+#radio-2:checked ~ .slide-2 > p { opacity: 1 }
+
+#radio-3:checked ~ .slide-3 {
+    margin-left: -50%;
+    opacity: 1;
+}
+
+#radio-3:checked ~ .slide-3 > p { opacity: 1 }
+
+#radio-4:checked ~ .slide-4 {
+    margin-left: -75%;
+    opacity: 1;
+}
+
+#radio-4:checked ~ .slide-4 > p { opacity: 1 }
+
+@media screen and (max-width: 420px){ 
+
+    .slider {
+        margin: 5% auto;
+        width: 90%;
+    }
+
+    .description {
+        font-size: 100%;
+        top: 25%;
+    }
+    
+    .navigation {
+        justify-content: center;
+    }
+
+    label {
+        padding: 4px;
+    }
+
+    .bar {
+        width: 3vw;
+        height: 3vw;
+    }
+
+
+
+
+}
