@@ -3,9 +3,7 @@
     padding: 0;
 }
 
-body {
-    background-color: gray;
-}
+body { background-color: #80808042 }
 
 .slider {
     margin: 5% auto;
@@ -64,55 +62,41 @@ label {
     width: 1vw;
     height: 1vw;
     border-radius: 50%;
-    background: blue;
+    background: #009688;
     cursor: pointer;
     transition: all 0.4s ease-in;
 }
 
-.bar:hover {
-    background: white;
-}
+.bar:hover { background: #000000d1 }
 
 .bar:active {
     width: 0.7vw;
     height: 0.7vw;
-    background: transparent;
+    background: gray;
     border: 0.2vw solid white;
 } 
 
-#radio-1:checked ~ .slide-1 {
-    margin-left: 0;
-}
+#radio-1:checked ~ .slide-1 { margin-left: 0 }
 
-#radio-1:checked ~ .slide-1 > p {
-    opacity: 1;
-}
+#radio-1:checked ~ .slide-1 > p { opacity: 1 }
 
-#radio-2:checked ~ .slide-2 {
-    margin-left: -25%;
-}
+#radio-2:checked ~ .slide-2 { margin-left: -25% }
 
-#radio-2:checked ~ .slide-2 > p {
-    opacity: 1;
-}
+#radio-2:checked ~ .slide-2 > p { opacity: 1 }
 
 #radio-3:checked ~ .slide-3 {
     margin-left: -50%;
     opacity: 1;
 }
 
-#radio-3:checked ~ .slide-3 > p {
-    opacity: 1;
-}
+#radio-3:checked ~ .slide-3 > p { opacity: 1 }
 
 #radio-4:checked ~ .slide-4 {
     margin-left: -75%;
     opacity: 1;
 }
 
-#radio-4:checked ~ .slide-4 > p {
-    opacity: 1;
-}
+#radio-4:checked ~ .slide-4 > p { opacity: 1 }
 
 @media screen and (max-width: 420px){ 
 
