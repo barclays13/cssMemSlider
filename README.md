@@ -1,0 +1,1 @@
+deploy: https://barclays13.github.io/cssMemSlider/
