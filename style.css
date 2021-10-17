@@ -7,7 +7,7 @@ body { background-color: #80808042 }
 
 .slider {
     margin: 5% auto;
-    width: 60%;
+    width: 70%;
     overflow: hidden;
 }
 
@@ -28,10 +28,7 @@ body { background-color: #80808042 }
     border-radius: 2%;
 }
 
-input {
-    position: relative;
-    visibility: hidden;
-}
+input { display: none }
 
 .description {
     position: relative;
